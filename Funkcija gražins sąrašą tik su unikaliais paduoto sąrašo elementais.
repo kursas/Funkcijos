@@ -1,0 +1,9 @@
+#Funkcija gražins sąrašą tik su unikaliais paduoto sąrašo elementais.
+
+def unikalus_sarasas(sarasas):
+    naujas_sarasas = []
+    for skaicius in sarasas:
+        if skaicius not in naujas_sarasas:
+            naujas_sarasas.append(skaicius)
+    return naujas_sarasas
+print(unikalus_sarasas([4, 5, "Labas", 6, "Labas", True, 5, True, 10]))
