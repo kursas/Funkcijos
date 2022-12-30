@@ -1,0 +1,27 @@
+# 1. Sukurti funkciją, kuri grąžintų True reikšmę, jei įvesto skaičiaus pirma skaitmenų pusė yra lygi antrąjai, priešingu 
+# atveju grąžintų False.
+# 2. Parašyti funkciją, kuri grąžintų, kiekvieno elemento gretimą skaičių. Pvz:
+# Input: 5678
+# Output: 5 – 46, 6 – 57, 7 – 68, 8 - 79
+
+sk = input("Iveskite skaiciu: ")
+sk_ilgis = len(sk)
+
+if sk_ilgis % 2 == 0:
+    puses_ilgis = sk_ilgis / 2
+    puse1 = []
+    puse2 = []
+    for x_id in range(sk_ilgis):
+        if x_id < puses_ilgis:
+            puse1.append(int(sk[x_id]))
+        else:
+            puse2.append(int(sk[x_id]))
+    sum1 = sum(puse1)
+    sum2 = sum(puse2)
+    if sum1 == sum2:
+        print(True)
+    else:
+        print(False)
+else:
+    print(False)
+
