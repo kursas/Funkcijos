@@ -1,0 +1,5 @@
+#Gražins trijų paduotų skaičių sumą.
+
+def skaiciu_suma(sk1, sk2, sk3):
+    return sk1 + sk2 + sk3
+print(skaiciu_suma(45, 5, 6))
