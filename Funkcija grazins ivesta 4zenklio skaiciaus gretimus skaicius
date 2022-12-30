@@ -1,0 +1,18 @@
+#Parašyti funkciją, kuri grąžintų, kiekvieno elemento gretimą skaičių. Pvz:
+#Input: 5678
+#Output: 5 – 46, 6 – 57, 7 – 68, 8 - 79
+
+def tikrinimas(skaicius):
+    skaiciaus_stringas=(str(skaicius))
+    for i in skaiciaus_stringas:
+        print(f'{i}-gretimi-{int(i)-1},{int(i)+1}')
+
+tikrinimas(6509)
+
+#output
+6-gretimi-5,7
+5-gretimi-4,6
+0-gretimi--1,1
+9-gretimi-8,10
+
+Process finished with exit code 0
