@@ -1,0 +1,17 @@
+#Funkcija gražins, ar paduotas skaičius yra pirminis.
+
+def test_prime(n):
+    ats = ''
+    if n == 1:
+        ats = 'Skaicius nera pirminis'
+    elif n == 2:
+        ats = 'Skaicius pirminis'
+    else:
+        for x in range(2, n):
+            if n % x == 0:
+                ats = 'Skaicius nera pirminis'
+                break
+            else:
+                ats = 'skaicius pirminis'
+    return ats
+print(test_prime(5))
