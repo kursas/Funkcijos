@@ -1,0 +1,5 @@
+#Funkcija gražins paduotą stringą atbulai
+
+def stringas_atbulai(stringas):
+    return stringas[::-1]
+print(stringas_atbulai("Labas rytas!"))
