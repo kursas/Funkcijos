@@ -1,0 +1,15 @@
+#Funcija gražins,kiek paduotame stringe yra žodžių, didžiųjų ir mažųjų raidžių, skaičių.
+def info_apie_sakini(stringas):
+    print(f"Šiame sakinyje yra {len(stringas.split())} žodžių")
+    didziosios = 0
+    mazosios = 0
+    skaiciai = 0
+    for simbolis in stringas:
+        if simbolis.isupper():
+            didziosios += 1
+        if simbolis.islower():
+            mazosios += 1
+        if simbolis.isnumeric():
+            skaiciai += 1
+    print(f"Didžiosios: {didziosios}, mažosios: {mazosios}, skaičiai: {skaiciai}")
+info_apie_sakini("Laba diena laba diena lab 522")
