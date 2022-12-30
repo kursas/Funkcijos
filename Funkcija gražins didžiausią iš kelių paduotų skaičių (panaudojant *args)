@@ -1,0 +1,5 @@
+#Funkcija gražins didžiausią iš kelių paduotų skaičių (panaudojant *args)
+
+def didziausias_skaicius(*args):
+    return max(args)
+print(didziausias_skaicius(5, 8, 789, 94, 78))
