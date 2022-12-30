@@ -1,0 +1,34 @@
+#Funkcija gražins, kiek nuo paduotos sukakties praėjo metų, mėnesių, dienų, valandų, minučių, sekundžių.
+
+import datetime
+def patikrinti_data(sukaktis):
+    ivesta_data = datetime.datetime.strptime(sukaktis, "%Y-%m-%d %X")
+    now = datetime.datetime.now()
+    skirtumas = now - ivesta_data
+
+    print("Praėjo metų: ", skirtumas.days // 365)
+    print("Praėjo mėnesių: ", skirtumas.days / 365 * 12)
+    print("Praėjo savaičių: ", skirtumas.days // 7)
+    print("Praėjo dienų: ", skirtumas.days)
+    print("Praėjo valandų: ", skirtumas.total_seconds() / 3600)
+    print("Praėjo minučių: ", skirtumas.total_seconds() / 60)
+    print("Praėjo sekundžių: ", skirtumas.total_seconds())
+
+patikrinti_data("2000-01-01 12:12:12")
+patikrinti_data("1991-03-11 12:12:12")
+
+#output:
+Praėjo metų:  23
+Praėjo mėnesių:  276.09863013698634
+Praėjo savaičių:  1199
+Praėjo dienų:  8398
+Praėjo valandų:  201574.60111314224
+Praėjo minučių:  12094476.066788534
+Praėjo sekundžių:  725668564.007312
+Praėjo metų:  31
+Praėjo mėnesių:  381.89589041095894
+Praėjo savaičių:  1659
+Praėjo dienų:  11616
+Praėjo valandų:  278806.6011131422
+Praėjo minučių:  16728396.066788534
+Praėjo sekundžių:  1003703764.007312
